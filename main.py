@@ -12,3 +12,5 @@ for file in glob.glob("*.png"):
     im = Image.open(file)
 #convert to RGB format, RGBA supports transparency
     rgb_im = im.convert('RGB')
+#convert png to jpg and set img quality
+    rgb_im.save(file.replace("png", "jpg"), quality=95)
