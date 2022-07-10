@@ -8,3 +8,5 @@ print(glob.glob("*.png"))
 
 #iterates through image files in current working directory
 for file in glob.glob("*.png"):
+#open image file
+    im = Image.open(file)
