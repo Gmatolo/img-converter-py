@@ -10,3 +10,5 @@ print(glob.glob("*.png"))
 for file in glob.glob("*.png"):
 #open image file
     im = Image.open(file)
+#convert to RGB format, RGBA supports transparency
+    rgb_im = im.convert('RGB')
